@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+.cabecalho {
+    background: linear-gradient(45deg, #fff, rgb(22, 9, 207) );
+    padding: 15px;
+}
+ 
+.menu{
+     display: flex;
+     justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blueviolet;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200)
+
+}
+.editar {
+    color:navy;
+    text-decoration: none;
+    padding: 1.5px;
+}
+.editar:active{
+    color: orangered;
+}
+
+
+img {
+    width: 180px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="logotipo da NewTab Academy" >
+        </div>
+    </div>
+    <div class="menu">
+        <a id="goHome"href="./index.html"> Listagem </a>
+        <a href="./form.html"> Cadastrar </a>
+    </div>
+    <section>
+        <form class="formulario" onsubmit="testaFormulario(event);">
+            <div class="linha-formulario">
+            <label class="label-grande" for="name">Nome:</label>
+                <input name="name" id="name" required type="text" placeholder="Digite o seu nome "/>
+            </div>
+            <div class="linha-formulario">
+                <label class="label-grande" for="phone">Telefone:</label>
+                <input placeholder="Digite o seu número" name="tel" id="tel" onkeypress="testaCampoTelefone(event)" onfocus="this.value = ''" required type="text"/>
+            </div>
+
+            <div class="linha-formulario xp-line" style="display: flex;">
+                <label class="label-grande">Experiência:</label>
+                <div>
+                    <input type="radio" name="exp" id="exp-yes" value="true"/> <label for="exp-yes">Sim</label> 
+                    <br>
+                    <input type="radio" name="exp" id="exp-no" value="false" /> <label for="exp-no">Não</label>                 
+                </div>
+            </div>
+
+             
+            
+
+            <input type="submit" value="Salvar"/>
+        </form>
+        <script src="./assets/js/form.js"></script>
+    </section>
+     
+</body>
+</html>
